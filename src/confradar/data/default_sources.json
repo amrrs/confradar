@@ -1,0 +1,7 @@
+[
+  {"type": "json", "url": "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences/2025/javascript.json"},
+  {"type": "json", "url": "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences/2025/python.json"},
+  {"type": "json", "url": "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences/2025/ai-ml-data-science.json"},
+  {"type": "json", "url": "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences/2025/devops.json"}
+]
+

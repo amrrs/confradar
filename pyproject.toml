@@ -1,0 +1,58 @@
+ [build-system]
+ requires = ["hatchling>=1.20.0"]
+ build-backend = "hatchling.build"
+
+ [project]
+ name = "confradar"
+ version = "0.1.0"
+ description = "A colorful CLI to explore upcoming tech conferences"
+ readme = "README.md"
+ requires-python = ">=3.9"
+ license = { text = "MIT" }
+authors = [
+  { name = "Confradar Authors", email = "1littlecoder@gmail.com" }
+]
+ dependencies = [
+   "typer>=0.12.3",
+  "rich>=13.7.1",
+  "platformdirs>=4.2.0",
+  "httpx>=0.27.0",
+  "readchar>=4.0.6"
+ ]
+
+ classifiers = [
+   "Programming Language :: Python :: 3",
+   "Programming Language :: Python :: 3 :: Only",
+   "License :: OSI Approved :: MIT License",
+   "Environment :: Console",
+   "Intended Audience :: Developers",
+   "Topic :: Internet :: WWW/HTTP",
+   "Topic :: Software Development :: Libraries :: Python Modules",
+   "Topic :: Utilities"
+ ]
+
+ [project.optional-dependencies]
+rss = ["feedparser>=6.0.11"]
+test = [
+  "pytest>=8.0.0",
+  "typer[all]>=0.12.3"
+]
+
+ [project.urls]
+ Homepage = "https://example.com/confradar"
+ Repository = "https://example.com/confradar/repo"
+
+ [project.scripts]
+ confradar = "confradar.cli:main"
+
+ [tool.hatch.build.targets.wheel]
+ packages = ["src/confradar"]
+
+[tool.hatch.build]
+include = [
+  "src/confradar/data/conferences.json"
+]
+
+[tool.hatch.build.force-include]
+"src/confradar/data/default_sources.json" = "confradar/data/default_sources.json"
+
