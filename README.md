@@ -24,22 +24,22 @@
 
 - pipx from a Git tag (recommended):
   ```bash
-  pipx install "confradar @ git+https://github.com/1littlecoder/confradar.git@v0.1.0"
+  pipx install "confradar @ git+https://github.com/amrrs/confradar.git@v0.1.0"
   # upgrade later (rebuilds from Git):
   pipx upgrade confradar
   ```
 - pipx from main (latest):
   ```bash
-  pipx install "confradar @ git+https://github.com/1littlecoder/confradar.git@main"
+  pipx install "confradar @ git+https://github.com/amrrs/confradar.git@main"
   ```
 - pip (user site) from Git:
   ```bash
-  python3 -m pip install --user "confradar @ git+https://github.com/1littlecoder/confradar.git@v0.1.0"
+  python3 -m pip install --user "confradar @ git+https://github.com/amrrs/confradar.git@v0.1.0"
   # ensure ~/.local/bin (Linux) or ~/Library/Python/*/bin (macOS) is on PATH
   ```
 - Local clone with pipx:
   ```bash
-  git clone https://github.com/1littlecoder/confradar.git
+  git clone https://github.com/amrrs/confradar.git
   cd confradar
   pipx install .
   ```
