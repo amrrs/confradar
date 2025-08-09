@@ -2,6 +2,10 @@
 
  A colorful CLI to explore upcoming tech conferences. Built with Typer and Rich.
 
+## Screenshot
+
+![Confradar TUI](https://raw.githubusercontent.com/amrrs/confradar/main/docs/assets/tui.png)
+
 ## Install
 
 - Recommended (no venv hassle):
