@@ -44,6 +44,29 @@
   pipx install .
   ```
 
+### If `confradar` is not found after pip --user install
+
+Add your user scripts directory to PATH (macOS example for Python 3.9):
+
+```bash
+echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Portable (any OS/Python version):
+
+```bash
+USER_BASE="$(python3 -m site --user-base)"
+echo 'export PATH="'"$USER_BASE"'/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Using pipx avoids PATH issues:
+
+```bash
+pipx ensurepath
+```
+
  ## Quickstart
 
  ```bash
