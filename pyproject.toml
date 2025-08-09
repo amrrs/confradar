@@ -50,9 +50,8 @@ test = [
 
 [tool.hatch.build]
 include = [
-  "src/confradar/data/conferences.json"
+  "src/confradar/data/conferences.json",
+  "src/confradar/data/default_sources.json"
 ]
 
-[tool.hatch.build.force-include]
-"src/confradar/data/default_sources.json" = "confradar/data/default_sources.json"
 
